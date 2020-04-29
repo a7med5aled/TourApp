@@ -27,11 +27,11 @@ public class IslamicFragment extends Fragment {
 
         final ArrayList<Tour_data> islamic_data = new ArrayList<Tour_data>();
 
-        islamic_data .add(new Tour_data(getString(R.string.EGYPTION_MUESUM), getString(R.string.EGYPTION_MUESUM), "01212260464", R.drawable.tatto));
-        islamic_data .add(new Tour_data(getString(R.string.EGYPTION_MUESUM), getString(R.string.EGYPTION_MUESUM), "01212260464", R.drawable.b));
-        islamic_data .add(new Tour_data(getString(R.string.EGYPTION_MUESUM),getString(R.string.EGYPTION_MUESUM), "01212260464", R.drawable.a));
-        islamic_data .add(new Tour_data(getString(R.string.EGYPTION_MUESUM),getString(R.string.EGYPTION_MUESUM), "01212260464", R.drawable.w));
-        islamic_data .add(new Tour_data(getString(R.string.EGYPTION_MUESUM), getString(R.string.EGYPTION_MUESUM), "01212260464", R.drawable.q));
+        islamic_data .add(new Tour_data(getString(R.string.CA_RLITO), getString(R.string.شارع_المتوكل_مع_سعيد), "01212260464", R.drawable.tatto));
+        islamic_data .add(new Tour_data(getString(R.string.CA_RLITO), getString(R.string.شارع_المتوكل_مع_سعيد), "01212260464", R.drawable.tatto));
+        islamic_data .add(new Tour_data(getString(R.string.CA_RLITO), getString(R.string.شارع_المتوكل_مع_سعيد), "01212260464", R.drawable.tatto));
+        islamic_data .add(new Tour_data(getString(R.string.CA_RLITO), getString(R.string.شارع_المتوكل_مع_سعيد), "01212260464", R.drawable.tatto));
+        islamic_data .add(new Tour_data(getString(R.string.CA_RLITO), getString(R.string.شارع_المتوكل_مع_سعيد), "01212260464", R.drawable.tatto));
         ListView listView = (ListView) rootView.findViewById(R.id.islamic_list_view);
         TourAdapter adapter = new TourAdapter(getActivity()  ,islamic_data , R.color.colorAccent);
         listView.setAdapter(adapter);

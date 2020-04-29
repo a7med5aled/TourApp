@@ -1,14 +1,22 @@
 package com.example.tourapp;
 
 
+import android.content.Context;
+
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    public SimpleFragmentPagerAdapter(FragmentManager fm) {
+
+    private Context myContext;
+    int totalTabs;
+
+    public SimpleFragmentPagerAdapter(Context context, FragmentManager fm, int totalTabs) {
         super(fm);
+        myContext = context;
+        this.totalTabs = totalTabs;
     }
 
     @Override
@@ -29,6 +37,8 @@ class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 4;
+        return totalTabs;
+
     }
 }
+
