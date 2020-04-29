@@ -18,9 +18,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         tabLayout=(TabLayout)findViewById(R.id.tabLayout);
-        tabLayout.addTab(tabLayout.newTab().setText("Home"));
-        tabLayout.addTab(tabLayout.newTab().setText("Sport"));
-        tabLayout.addTab(tabLayout.newTab().setText("Movie"));
+        tabLayout.addTab(tabLayout.newTab().setText("resturant"));
+        tabLayout.addTab(tabLayout.newTab().setText("museum"));
+        tabLayout.addTab(tabLayout.newTab().setText("islamic"));
+        tabLayout.addTab(tabLayout.newTab().setText("event"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final ViewPager viewPager = (ViewPager)findViewById(R.id.viewpager);
